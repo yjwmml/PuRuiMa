@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yjwmml.puruima.EventList" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings"/>
+
+    <item
+        android:id="@+id/action_add_event"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_add_event"
+        android:icon="@drawable/ic_action_new"/>
+
+    <item
+        android:id="@+id/action_history"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom"
+        android:title="History"
+        android:icon="@drawable/ic_action_go_to_today"/>
+
+</menu>

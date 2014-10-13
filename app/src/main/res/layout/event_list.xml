@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:tag="back"
+        android:gravity="center|right"
+        android:background="#ffcccccc"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:background="@drawable/ic_action_discard"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+
+        <Button
+            android:id="@+id/bt_update"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:background="@drawable/ic_action_edit" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ffffff" />
+
+        <Button
+            android:id="@+id/bt_complete"
+            android:layout_width="?android:attr/listPreferredItemHeight"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:background="@drawable/ic_action_accept" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="front"
+        android:background="#ffffffff">
+
+        <TextView
+            android:id="@+id/event_list"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="4"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center_vertical|start" />
+
+        <TextView
+            android:id="@+id/event_iscompleted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+
+</FrameLayout>
